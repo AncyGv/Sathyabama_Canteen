@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sathyabama Canteen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,rgb(10, 66, 138), #a0aad8);
+            color: #333;
+        }
+        header, footer {
+            background:rgb(10, 66, 138);
+            color: #aca9da;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        img {
+            width: 100%;
+            max-height: 500px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #aca9da;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #aca9da;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(20, 19, 19, 0.1);
+        }
+        button {
+            background: rgb(10, 66, 138);
+            color: #a0aad8;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        div {
+            background: rgb(10, 66, 138);
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border: 5px solid white;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: #aca9da;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sathyabama Canteen</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#order">Order Now</a> |
+            <a href="#contact Details">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>About Canteen</h2>
+        <p><b>Welcome to the Sathyabama University Canteen! Enjoy fresh and delicious food anytime.</b></p>
+        <img src="sathyabama_Canteen.jpg" alt="Canteen Interior">
+    </section>
+    
+    <section id="menu">
+        <h2>Menu card</h2>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; width: 100%; color: #f0e6ff; font-family: 'Arial', sans-serif; font-size: large;">
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                🍔<br>Burger<br>₹189
+            </div>
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                🍕<br>Pizza<br>₹150
+            </div>
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                🥪<br>Sandwich<br>₹90
+            </div>
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                🥤<br>Soft Drink<br>₹50
+            </div>
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                ☕<br>Coffee<br>₹40
+            </div>
+            <div style="background: rgb(16, 75, 153); padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); text-align: center; width: 150px;">
+                🍟<br>French Fries<br>₹99
+            </div>
+        </div>
+                
+        <img src="canteen.jpg" alt="Delicious Menu Items" style="width: 100%; border-radius: 10px; margin: 20px 0;">
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form action="order_success.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="item">Select Item:</label>
+            <select id="item" name="item" required>
+                <option value="burger">Burger - ₹189</option>
+                <option value="pizza">Pizza - ₹150</option>
+                <option value="sandwich">Sandwich - ₹90</option>
+                <option value="soft_drink">Soft Drink - ₹50</option>
+                <option value="coffee">Coffee - ₹40</option>
+                <option value="fries">French Fries - ₹99</option>
+            </select><br><br>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+            
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <img src="https://media.istockphoto.com/id/1271752802/photo/phone-and-e-mail-icons-on-wooden-cubes-with-contact-us-text-on-blue-background-web-page.jpg?s=612x612&w=0&k=20&c=dk9oPaDy_L9mv_icOMgsFGzEDrX0NUI3I8xBQ-DAxQM=" alt="Contact Us">
+        <p>Email: sathyabamacanteen@gmail.com</p>
+        <p>Phone: +91 9783455670</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sathyabama Canteen. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
